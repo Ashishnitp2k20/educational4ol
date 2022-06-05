@@ -1,0 +1,116 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: #000428;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    width: min(1600px, 100%);
+    margin: auto;
+}
+.pricing-table h2 {
+    font-family: 'Sacramento', cursive;
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    
+    font-size: 2em;
+        position: absolute;
+      
+        top: 0;
+      
+        left: 50%;
+      
+        transform: translate(-50%, -50%);
+      
+        padding-bottom: 40px;
+      
+      }
+.pricing-table h2 i{
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.pricing-card {
+    flex: 1;
+    margin: 5px;
+    max-width: 360px;
+    background-color: #FFE6E6;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2d2d2d;
+    transition: all 0.3s linear;
+}.pricing-card-header {
+    background-color: #0fbcf9;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.4s linear;
+}
+.pricing-card:hover .pricing-card-header {
+    box-shadow: 0 0 0 20em #0fbcf9;
+}
+.price{
+    font-size: 4.5rem;
+    color: #0fbcf9;
+    margin: 40px 0 0;
+    transition: all 0.2s linear;
+}
+.price sup, .price span{
+    font-size: 22px;
+    font-weight: 700;
+}
+.pricing-card:hover, .pricing-card:hover .price{
+    color: #fff;
+}
+.pricing-card li{
+    font-size: 1rem;
+    padding: 10px  10px;
+    text-transform: uppercase;
+}
+.order-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid #0fbcf9;
+    color: #0fbcf9;
+    padding: 10px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s linear;
+}
+.order-btn:hover {
+    background-color: #0fbcf9;
+    color: #fff; 
+}
+@media screen and (max-width: 1100px) 
+{
+           .pricing-card{
+               flex: 50%;
+           }
+}
